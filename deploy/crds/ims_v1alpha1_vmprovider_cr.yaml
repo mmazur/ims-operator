@@ -1,0 +1,13 @@
+apiVersion: ims.kubevirt.io/v1alpha1
+kind: VMProvider
+metadata:
+  name: vmp-vmware1
+spec:
+  api_endpoint: https://www.example.com
+  api_type: vmware
+  # auth_token: 4   # chosen by fair dice roll, guaranteed to be random
+  auth_username: admin
+  auth_password: 
+  tls_verify: false
+  #  ca_cert:   # the actual pem with the cert, not a path to anything
+

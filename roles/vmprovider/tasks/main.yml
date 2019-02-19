@@ -1,0 +1,12 @@
+---
+- name: create ExternalVM
+  k8s:
+    definition:
+      apiVersion: ims.kubevirt.io/v1alpha1
+      kind: ExternalVM
+      metadata:
+        name: '{{ meta.name }}-evm1'
+        namespace: '{{ meta.namespace }}'
+      spec:
+        tls_verify: false
+
